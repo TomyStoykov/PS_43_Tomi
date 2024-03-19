@@ -7,7 +7,7 @@ using Welcome.Others;
 
 namespace Welcome.Model
 {
-    internal class User
+    public class User
     {
         private string _names;
         private string _password;
