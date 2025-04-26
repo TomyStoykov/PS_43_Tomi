@@ -14,6 +14,8 @@ namespace Welcome.Model
         private UserRolesEnum _role;
         private string _email;
         private string _facultyNumber;
+        private int _id;
+        private DateTime _expires;
 
         public string Names {
             get { return _names; }
@@ -25,6 +27,14 @@ namespace Welcome.Model
             get { return Decrypt(_password); }
             set { _password = Encrypt(value); }
         }
+        
+        public virtual int Id
+        {
+            get { return _id; }
+            set { _id = value; }
+        }
+        
+        public DateTime Expires { get { return _expires; } set {  _expires = value; } }
 
         private string Encrypt(string input)
         {

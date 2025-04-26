@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:views="clr-namespace:TodoApp.Views"
+    x:Class="TodoApp.Views.MainPage">
+    <StackLayout>
+        <Label Text="Всички задачи" FontSize="Large" HorizontalOptions="Center"/>
+        <views:TodoListView />
+        <Button Text="Преглед на завършените задачи" Clicked="OnViewCompletedClicked"/>
+        <Button Text="Детайли за задачите" Clicked="OnViewDetailsClicked"/>
+    </StackLayout>
+</ContentPage>

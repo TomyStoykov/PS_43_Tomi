@@ -15,6 +15,7 @@ namespace Welcome
             user.Email = "pesho@gmail.com";
             user.FacultyNumber = "121212111";
 
+
             UserViewModel viewModel = new UserViewModel(user);
             viewModel.Name = user.Names;
             viewModel.Role = user.Role;
